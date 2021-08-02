@@ -64,16 +64,17 @@
 
 // export default App;
 
-
-
-import React from 'react'
+import React from "react";
+import { Provider } from "react-redux";
+import Home from "./Home";
+import { store } from "./redux/store";
 
 function App() {
   return (
-    <div>
-      
-    </div>
-  )
+    <Provider store={store}>
+      <Home />
+    </Provider>
+  );
 }
 
-export default App
+export default App;
